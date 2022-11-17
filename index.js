@@ -4,8 +4,6 @@ import morgan from 'morgan';
 import winston from 'winston';
 import { createServer } from 'http';
 
-// TODO: add process.memoryUsage and heap and rss etc to log
-// Output request headers and body
 const logger = winston.createLogger({
   level: 'debug',
   format: winston.format.combine(
